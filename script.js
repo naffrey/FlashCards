@@ -33,8 +33,7 @@ let card2 = new cardParts(
 
 let card1 = new cardParts('.concat()', 'Joins two separate arrays together.');
 let card7 = new cardParts(
-	'CONGRATS... *cought cough* push flip my dude',
-	'You have successfully remembered the main methods for altering an array in Javascript!'
+	'CONGRATS! YOU ARE ABLE TO RECALL JAVASCRIPT METHODS',""
 );
 
 // deck of cards
@@ -51,6 +50,8 @@ function nextCard() {
 	index = (index + 1) % deck.length;
 	cardFront.innerHTML = deck[index].word;
 	cardBack.innerHTML = deck[index].define;
+	cardVis.classList.toggle('vis');
+	
 }
 
 // if incorrect is pushed have it disapear but be added back in at the end of the array
